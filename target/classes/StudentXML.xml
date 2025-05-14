@@ -1,0 +1,28 @@
+<students>
+    <student>
+        <gender>Male</gender>
+        <schoolName>ABC University</schoolName>
+        <examArea/>
+        <idCard/>
+        <major/>
+        <typeCMT/>
+        <CMT/>
+        <phoneNumber>0123456789</phoneNumber>
+        <role/>
+        <openingDate>2025-05-14</openingDate>
+        <image/>
+    </student>
+    <student>
+        <gender>Female</gender>
+        <schoolName>XYZ College</schoolName>
+        <examArea/>
+        <idCard/>
+        <major/>
+        <typeCMT/>
+        <CMT/>
+        <phoneNumber>0987654321</phoneNumber>
+        <role/>
+        <openingDate>2025-05-14</openingDate>
+        <image/>
+    </student>
+</students>
