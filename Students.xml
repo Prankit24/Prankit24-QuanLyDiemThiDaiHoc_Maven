@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <id>1</id>
+        <name>Nguyễn Văn A</name>
+        <address>123 Đường A, Hà Nội</address>
+        <birthday>2005-06-01</birthday>
+        <gender>Nam</gender>
+        <schoolName>THPT Nguyễn Huệ</schoolName>
+        <examArea>Khu vực 1</examArea>
+        <idCard>123456789</idCard>
+        <major>CNTT</major>
+        <typeCMT>CCCD</typeCMT>
+        <CMT>001234567890</CMT>
+        <phoneNumber>0901234567</phoneNumber>
+        <role>Học sinh</role>
+        <openingDate>2023-05-05</openingDate>
+        <image></image>
+    </student>
+    <student>
+        <id>2</id>
+        <name>Trần Thị B</name>
+        <address>456 Đường B, Hải Phòng</address>
+        <birthday>2005-07-15</birthday>
+        <gender>Nữ</gender>
+        <schoolName>THPT Lê Quý Đôn</schoolName>
+        <examArea>Khu vực 2</examArea>
+        <idCard>987654321</idCard>
+        <major>Kinh tế</major>
+        <typeCMT>CMND</typeCMT>
+        <CMT>123456789</CMT>
+        <phoneNumber>0912345678</phoneNumber>
+        <role>Học sinh</role>
+        <openingDate>2023-06-10</openingDate>
+        <image></image>
+    </student>
+    <student>
+        <id>3</id>
+        <name>Lê Văn C</name>
+        <address>789 Đường C, Đà Nẵng</address>
+        <birthday>1997-05-08</birthday>
+        <gender>Nam</gender>
+        <schoolName>THPT Trần Phú</schoolName>
+        <examArea>Khu vực 3</examArea>
+        <idCard>555999111</idCard>
+        <major>Kỹ thuật</major>
+        <typeCMT>CCCD</typeCMT>
+        <CMT>009988776655</CMT>
+        <phoneNumber>0933445566</phoneNumber>
+        <role>Học sinh</role>
+        <openingDate>2023-07-01</openingDate>
+        <image></image>
+    </student>
+</students>

@@ -4,13 +4,20 @@ import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+<<<<<<< HEAD
 import java.util.Arrays;
+=======
+>>>>>>> b156958 (View fix)
 import java.util.Date;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @XmlRootElement(name = "student")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Student extends Person {
+<<<<<<< HEAD
+=======
+
+>>>>>>> b156958 (View fix)
     private static final long serialVersionUID = 1L;
 
     private String gender;
@@ -18,17 +25,30 @@ public class Student extends Person {
     private String examArea;
     private String idCard;
     private String major;
+<<<<<<< HEAD
     private String typeCMT; 
     private String CMT; 
     private String phoneNumber; 
     private String role;
     
+=======
+    private String typeCMT;
+    private String CMT;
+    private String phoneNumber;
+    private String role;
+
+>>>>>>> b156958 (View fix)
     @XmlJavaTypeAdapter(DateAdapter.class)
     private Date openingDate;
 
     private byte[] image;
 
+<<<<<<< HEAD
     public Student() {}
+=======
+    public Student() {
+    }
+>>>>>>> b156958 (View fix)
 
     public byte[] getImage() {
         return image;
@@ -118,4 +138,7 @@ public class Student extends Person {
         this.openingDate = openingDate;
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b156958 (View fix)

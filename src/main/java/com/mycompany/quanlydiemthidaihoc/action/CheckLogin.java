@@ -12,7 +12,11 @@ public class CheckLogin {
     // Phương thức kiểm tra thông tin đăng nhập
     public boolean checkUser(User user) {
         // Giả sử tài khoản hợp lệ là userName = "admin" và password = "password123"
+<<<<<<< HEAD
         if ("admin".equals(user.getUserName()) && "12345".equals(user.getPassword())) {
+=======
+        if ("admin".equals(user.getUserName()) && "12".equals(user.getPassword())) {
+>>>>>>> b156958 (View fix)
             return true;
         }
         return false;

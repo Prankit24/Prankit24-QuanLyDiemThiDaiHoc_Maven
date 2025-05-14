@@ -19,4 +19,8 @@ public class SpecialPersonXML {
     public void setSpecialPerson(List<SpecialPerson> specialPerson) {
         this.specialPerson = specialPerson;
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> b156958 (View fix)
 }

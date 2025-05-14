@@ -51,3 +51,7 @@ public class FileUtils {
         return null;
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b156958 (View fix)

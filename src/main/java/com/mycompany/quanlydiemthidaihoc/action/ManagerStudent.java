@@ -1,5 +1,6 @@
 package com.mycompany.quanlydiemthidaihoc.action;
 
+<<<<<<< HEAD
 import com.mycompany.quanlydiemthidaihoc.entity.StudentXML;
 import com.mycompany.quanlydiemthidaihoc.entity.Student;
 import com.mycompany.quanlydiemthidaihoc.utils.FileUtils;
@@ -81,12 +82,84 @@ public List<Student> readListStudents() {
         List<Student> result = new ArrayList<Student>();
         for (Student student : listStudents) {  // Đổi từ Residents thành Student
             if (String.valueOf(student.getId()).contains(search)) {
+=======
+import com.mycompany.quanlydiemthidaihoc.entity.Student;
+import com.mycompany.quanlydiemthidaihoc.entity.StudentXML;
+import com.mycompany.quanlydiemthidaihoc.utils.FileUtils;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ManagerStudent {
+
+    private List<Student> students;
+
+    public ManagerStudent() {
+        this.students = new ArrayList<>();
+        loadStudentsFromXML();  // Load dữ liệu từ XML khi khởi tạo ManagerStudent
+    }
+
+    // Load dữ liệu sinh viên từ file XML vào danh sách students
+    public void loadStudentsFromXML() {
+        StudentXML studentXML = (StudentXML) FileUtils.readXMLFile("students.xml", StudentXML.class);
+        if (studentXML != null) {
+            students = studentXML.getStudentList();  // Gán danh sách sinh viên từ XML vào students
+        }
+    }
+
+    public List<Student> getListStudents() {
+        return students;
+    }
+
+    public void add(Student student) {
+        students.add(student);
+        saveStudentsToXML();  // Sau khi thêm, lưu lại vào XML
+    }
+
+    public void edit(Student student) {
+        for (int i = 0; i < students.size(); i++) {
+            if (students.get(i).getId() == student.getId()) {
+                students.set(i, student);
+                saveStudentsToXML();  // Sau khi sửa, lưu lại vào XML
+                return;
+            }
+        }
+    }
+
+    public void delete(Student student) {
+        students.remove(student);
+        saveStudentsToXML();  // Sau khi xóa, lưu lại vào XML
+    }
+
+    public boolean isStudentIDUnique(Student student) {
+        for (Student s : students) {
+            if (s.getId() == student.getId()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public void sortStudentsByID() {
+        students.sort((s1, s2) -> Integer.compare(s1.getId(), s2.getId()));
+    }
+
+    public void sortStudentsByName() {
+        students.sort((s1, s2) -> s1.getName().compareTo(s2.getName()));
+    }
+
+    public List<Student> searchStudentID(String id) {
+        List<Student> result = new ArrayList<>();
+        for (Student student : students) {
+            if (String.valueOf(student.getId()).contains(id)) {
+>>>>>>> b156958 (View fix)
                 result.add(student);
             }
         }
         return result;
     }
 
+<<<<<<< HEAD
     public List<Student> searchStudentYear(String year) {  // Đổi từ searchResidentYear thành searchStudentYear
         List<Student> temp = new ArrayList<>();
         SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy");
@@ -217,5 +290,21 @@ public List<Student> readListStudents() {
 
     public void setListStudents(List<Student> listStudents) {  // Đổi từ setListResidents thành setListStudents
         this.listStudents = listStudents;  // Đổi từ Residents thành Student
+=======
+    public List<Student> searchStudentName(String name) {
+        List<Student> result = new ArrayList<>();
+        for (Student student : students) {
+            if (student.getName().toLowerCase().contains(name.toLowerCase())) {
+                result.add(student);
+            }
+        }
+        return result;
+    }
+
+    // Lưu danh sách sinh viên vào file XML
+    private void saveStudentsToXML() {
+        StudentXML studentXML = new StudentXML(students);
+        FileUtils.writeXMLtoFile("students.xml", studentXML);  // Lưu lại vào file XML
+>>>>>>> b156958 (View fix)
     }
 }

@@ -49,6 +49,7 @@ public class StudentView extends javax.swing.JFrame {
         "STT", "Số hộ khẩu", "Địa chỉ", "Vai trò", "Họ và tên", "Ngày sinh", "Liên hệ"};
     private SimpleDateFormat fDate = new SimpleDateFormat("dd/MM/yyyy");
     FlowLayout flowLayout = new FlowLayout();
+<<<<<<< HEAD
 
     public StudentView() {
         initComponents();
@@ -58,6 +59,18 @@ public class StudentView extends javax.swing.JFrame {
         btnSearch.setEnabled(true);
         tableResident.setDefaultRenderer(Object.class, new StudentView.MyRenderer());
     }
+=======
+    
+    public StudentView() {
+    initComponents();
+    btnAdd.setEnabled(true);
+    btnEdit.setEnabled(false);
+    btnDelete.setEnabled(false);
+    btnSearch.setEnabled(true);
+    tableResident.setDefaultRenderer(Object.class, new StudentView.MyRenderer());
+}
+
+>>>>>>> b156958 (View fix)
 
     private static Image getCircleImage(Image image) {
         int width = image.getWidth(null);
@@ -440,6 +453,7 @@ public class StudentView extends javax.swing.JFrame {
         jLabel14.setOpaque(false);
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+<<<<<<< HEAD
         jLabel3.setText("Số người có CCCD:");
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
@@ -447,6 +461,15 @@ public class StudentView extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel13.setText("Số người có CMND:");
+=======
+        jLabel3.setText("Thí sinh có CCCD:");
+
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel12.setText("Tổng số thí sinh đăng kí:");
+
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel13.setText("Thí sinh có CMND:");
+>>>>>>> b156958 (View fix)
 
         FieldSumFamily.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         FieldSumFamily.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -458,7 +481,11 @@ public class StudentView extends javax.swing.JFrame {
         });
 
         jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+<<<<<<< HEAD
         jLabel17.setText("Tổng dân số:");
+=======
+        jLabel17.setText("Tổng số thí sinh :");
+>>>>>>> b156958 (View fix)
 
         FieldSum.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         FieldSum.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 51, 102)));
@@ -504,6 +531,38 @@ public class StudentView extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+<<<<<<< HEAD
+=======
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(FieldSumDD))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(FieldSumCMND, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel17)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(FieldSum, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel12)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(FieldSumFamily, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(FieldSumCCCD, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(16, 16, 16))))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+>>>>>>> b156958 (View fix)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
@@ -519,6 +578,7 @@ public class StudentView extends javax.swing.JFrame {
                         .addComponent(CheckBoxSortIDFamily, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnSort, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -550,6 +610,14 @@ public class StudentView extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(jLabel14)
+=======
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(btnResidentUndo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCancelSearch, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addComponent(jLabel14)))
+>>>>>>> b156958 (View fix)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -1187,9 +1255,19 @@ public class StudentView extends javax.swing.JFrame {
             residents[i][2] = list.get(i).getAddress();
             residents[i][3] = list.get(i).getRole();
             residents[i][4] = list.get(i).getName();
+<<<<<<< HEAD
             residents[i][5] = fDate.format(list.get(i).getBirthday());
             residents[i][6] = list.get(i).getPhoneNumber();
         }
+=======
+
+            Date birthday = list.get(i).getBirthday();
+            residents[i][5] = (birthday != null) ? fDate.format(birthday) : "Chưa có";
+
+            residents[i][6] = list.get(i).getPhoneNumber();
+        }
+
+>>>>>>> b156958 (View fix)
         //jLabel1.setLayout(null);
         tableResident.getColumnModel().getColumn(0).setWidth(3);
         tableResident.setModel(new DefaultTableModel(residents, columnNames));
@@ -1214,7 +1292,10 @@ public class StudentView extends javax.swing.JFrame {
         TextAreaAddress.setText(st.getAddress());
 
         // Cập nhật thông tin khác từ đối tượng Student
+<<<<<<< HEAD
         ComboBoxRole.setSelectedItem(st.getRole());
+=======
+>>>>>>> b156958 (View fix)
         FieldPhone.setText(st.getPhoneNumber());
 
         // Kiểm tra và cập nhật giới tính
@@ -1260,7 +1341,10 @@ public class StudentView extends javax.swing.JFrame {
                 BirthdayChooser.setDate(selectedResident.getBirthday());
                 TextAreaAddress.setText(selectedResident.getAddress());
                 // Cập nhật các trường thông tin khác
+<<<<<<< HEAD
                 ComboBoxRole.setSelectedItem(selectedResident.getRole());
+=======
+>>>>>>> b156958 (View fix)
                 FieldPhone.setText(selectedResident.getPhoneNumber());
 
                 // Chuyển đổi Date thành String và gán vào JTextField
@@ -1303,10 +1387,16 @@ public class StudentView extends javax.swing.JFrame {
         if (row >= 0) {
             FieldIDFamily.setText(tableResident.getModel().getValueAt(row, 1).toString());
             TextAreaAddress.setText(tableResident.getModel().getValueAt(row, 2).toString());
+<<<<<<< HEAD
             ComboBoxRole.setSelectedItem(tableResident.getModel().getValueAt(row, 3).toString());
             FieldName.setText(tableResident.getModel().getValueAt(row, 4).toString());
             BirthdayChooser.setDate(fDate.parse(tableResident.getModel().getValueAt(row, 5).toString()));
             FieldPhone.setText(tableResident.getModel().getValueAt(row, 6).toString());
+=======
+            FieldName.setText(tableResident.getModel().getValueAt(row, 3).toString());
+            BirthdayChooser.setDate(fDate.parse(tableResident.getModel().getValueAt(row, 4).toString()));
+            FieldPhone.setText(tableResident.getModel().getValueAt(row, 5).toString());
+>>>>>>> b156958 (View fix)
 
             // enable Edit and Delete buttons
             btnEdit.setEnabled(true);
@@ -1329,7 +1419,10 @@ public class StudentView extends javax.swing.JFrame {
     public void clearStudentInfo() {
         FieldID.setText("");
         FieldIDFamily.setText("");
+<<<<<<< HEAD
         ComboBoxRole.setSelectedItem("<none>");
+=======
+>>>>>>> b156958 (View fix)
         FieldName.setText("");
         BirthdayChooser.setDate(null);
         TextAreaAddress.setText("");

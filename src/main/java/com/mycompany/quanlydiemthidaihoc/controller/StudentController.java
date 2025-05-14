@@ -20,10 +20,13 @@ public class StudentController {
     private StudentView studentView;
     private ManagerStudent managerStudents;
     private MainView mainView;
+<<<<<<< HEAD
     
 
     // Constructor nhận vào cả StudentView và MainView
     
+=======
+>>>>>>> b156958 (View fix)
 
     public StudentController(StudentView studentView, MainView mainView) {
         this.studentView = studentView;
@@ -79,6 +82,7 @@ public class StudentController {
         public void actionPerformed(ActionEvent e) {
             Student student = studentView.getStudentInfo();
             if (student != null) {
+<<<<<<< HEAD
                 try {
                     managerStudents.edit(student);
                     updateStudentView();
@@ -86,6 +90,11 @@ public class StudentController {
                 } catch (ParseException ex) {
                     Logger.getLogger(StudentController.class.getName()).log(Level.SEVERE, null, ex);
                 }
+=======
+                managerStudents.edit(student);
+                updateStudentView();
+                studentView.showMessage("Cập nhật thành công!");
+>>>>>>> b156958 (View fix)
             }
         }
     }

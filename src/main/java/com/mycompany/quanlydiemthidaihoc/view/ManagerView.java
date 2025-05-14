@@ -74,6 +74,10 @@ public class ManagerView extends javax.swing.JFrame {
         //jLabel14.setLablFor(new CircleLabel());      
         OpeningDateChooser.setBackground(new Color(0, 204, 255));
         chart1.addLegend("Số lượng", new Color(0, 178, 238));
+<<<<<<< HEAD
+=======
+        mainView = new MainView();
+>>>>>>> b156958 (View fix)
     }
 
     private static Image getCircleImage(Image image) {
@@ -209,7 +213,10 @@ public class ManagerView extends javax.swing.JFrame {
         btnStatisticAge = new javax.swing.JButton();
         btnStatisticUnder = new javax.swing.JButton();
         btnStatisticType = new javax.swing.JButton();
+<<<<<<< HEAD
         timingTargetAdapter1 = new org.jdesktop.animation.timing.TimingTargetAdapter();
+=======
+>>>>>>> b156958 (View fix)
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         btnAdd = new javax.swing.JButton();
@@ -1063,7 +1070,10 @@ public class ManagerView extends javax.swing.JFrame {
      */
 public void showListSpecialPersons(List<SpecialPerson> list) {
     int size = list.size();
+<<<<<<< HEAD
     // Số cột là 7 (thêm cột cho image)
+=======
+>>>>>>> b156958 (View fix)
     Object[][] specialPersons = new Object[size][7];  
     for (int i = 0; i < size; i++) {
         specialPersons[i][0] = list.get(i).getId();               // ID
@@ -1076,11 +1086,16 @@ public void showListSpecialPersons(List<SpecialPerson> list) {
     }
 
     // Cập nhật lại bảng hiển thị
+<<<<<<< HEAD
     tableSpecialPerson.setModel(new DefaultTableModel(specialPersons, new String[]{"ID", "Name", "Birthday", "Address", "Opening Date", "Type CMT", "Image"}));
 
 
     // Trong ManagerView.java
 // Trong ManagerView.java
+=======
+    DefaultTableModel model = new DefaultTableModel(specialPersons, columnNames);
+    tableSpecialPerson.setModel(model);  // Cập nhật lại mô hình bảng
+>>>>>>> b156958 (View fix)
 }
 public void showCountListSpecialPersons(List<SpecialPerson> list) {
     int size = list.size();
@@ -1620,6 +1635,9 @@ public void addImageSpecialPersonListener(ActionListener listener) {
     private javax.swing.JPanel panelChart;
     private javax.swing.JTable tableSpecialPerson;
     private javax.swing.JTable tableStatistic;
+<<<<<<< HEAD
     private org.jdesktop.animation.timing.TimingTargetAdapter timingTargetAdapter1;
+=======
+>>>>>>> b156958 (View fix)
     // End of variables declaration//GEN-END:variables
 }

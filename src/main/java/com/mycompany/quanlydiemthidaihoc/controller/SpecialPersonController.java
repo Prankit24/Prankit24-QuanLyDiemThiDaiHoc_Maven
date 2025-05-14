@@ -2,6 +2,7 @@ package com.mycompany.quanlydiemthidaihoc.controller;
 
 import com.mycompany.quanlydiemthidaihoc.action.SpecialPersonManager;
 import com.mycompany.quanlydiemthidaihoc.entity.SpecialPerson;
+<<<<<<< HEAD
 import com.mycompany.quanlydiemthidaihoc.view.LoginView;
 import com.mycompany.quanlydiemthidaihoc.view.MainView;
 import com.mycompany.quanlydiemthidaihoc.view.ManagerView;
@@ -26,16 +27,31 @@ import javax.swing.event.ListSelectionListener;
 public class SpecialPersonController {
 
     private SimpleDateFormat fDate = new SimpleDateFormat("dd/MM/yyyy");
+=======
+import com.mycompany.quanlydiemthidaihoc.view.ManagerView;
+import com.mycompany.quanlydiemthidaihoc.view.MainView;
+import java.util.List;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class SpecialPersonController {
+
+>>>>>>> b156958 (View fix)
     private SpecialPersonManager specialPersonManager;
     private ManagerView managerView;
     private MainView mainView;
 
+<<<<<<< HEAD
     // Constructor duy nhất nhận cả ManagerView và MainView
+=======
+    // Constructor that accepts ManagerView and MainView
+>>>>>>> b156958 (View fix)
     public SpecialPersonController(ManagerView managerView, MainView mainView) {
         this.managerView = managerView;
         this.mainView = mainView;
         this.specialPersonManager = new SpecialPersonManager();
 
+<<<<<<< HEAD
         // Đăng ký các listener cho các nút
         managerView.addAddSpecialPersonListener(new AddSpecialPersonListener());
         managerView.addEditSpecialPersonListener(new EditSpecialPersonListener());
@@ -68,6 +84,16 @@ class ImageSpecialPersonListener implements ActionListener {
             // Xử lý khi người dùng nhấn nút Image
             managerView.SpecialPersonImage();  // Gọi phương thức xử lý ảnh trong ManagerView
         }
+=======
+        // Register listeners
+        managerView.addAddSpecialPersonListener(new AddSpecialPersonListener());
+        managerView.addEditSpecialPersonListener(new EditSpecialPersonListener());
+        managerView.addDeleteSpecialPersonListener(new DeleteSpecialPersonListener());
+        managerView.addSearchListener(new SearchSpecialPersonListener());
+        managerView.addSortByNameListener(new SortByNameListener());
+        managerView.addSortByOpeningDateListener(new SortByOpeningDateListener());
+        managerView.addStatisticListener(new StatisticViewListener());
+>>>>>>> b156958 (View fix)
     }
 
     public void showManagerView() {
@@ -75,10 +101,17 @@ class ImageSpecialPersonListener implements ActionListener {
         managerView.showListSpecialPersons(specialPersonList);
         managerView.showCountListSpecialPersons(specialPersonList);
         managerView.setVisible(true);
+<<<<<<< HEAD
         mainView.setVisible(false); // Ẩn MainView
     }
 
     // Các phương thức sự kiện tương ứng với các nút
+=======
+        mainView.setVisible(false);  // Hide MainView
+    }
+
+    // ActionListener to handle Add SpecialPerson
+>>>>>>> b156958 (View fix)
     class AddSpecialPersonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             SpecialPerson specialPerson = managerView.getSpecialPersonInfo();
@@ -92,6 +125,7 @@ class ImageSpecialPersonListener implements ActionListener {
         }
     }
 
+<<<<<<< HEAD
     class EditSpecialPersonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             SpecialPerson specialPerson = managerView.getSpecialPersonInfo();
@@ -101,14 +135,33 @@ class ImageSpecialPersonListener implements ActionListener {
                 } catch (ParseException ex) {
                     Logger.getLogger(SpecialPersonController.class.getName()).log(Level.SEVERE, null, ex);
                 }
+=======
+    // ActionListener to handle Edit SpecialPerson
+    class EditSpecialPersonListener implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+        try {
+            SpecialPerson specialPerson = managerView.getSpecialPersonInfo();
+            if (specialPerson != null) {
+                specialPersonManager.edit(specialPerson);  // Now it will throw ParseException
+>>>>>>> b156958 (View fix)
                 managerView.showSpecialPerson(specialPerson);
                 managerView.showListSpecialPersons(specialPersonManager.getListSpecialPersons());
                 managerView.showCountListSpecialPersons(specialPersonManager.getListSpecialPersons());
                 managerView.showMessage("Cập nhật thành công!");
             }
+<<<<<<< HEAD
         }
     }
 
+=======
+        } catch (Exception ex) {
+            managerView.showMessage("Lỗi khi cập nhật thông tin. Vui lòng kiểm tra lại dữ liệu.");
+        }
+    }
+}
+
+    // ActionListener to handle Delete SpecialPerson
+>>>>>>> b156958 (View fix)
     class DeleteSpecialPersonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             SpecialPerson specialPerson = managerView.getSpecialPersonInfo();
@@ -122,6 +175,7 @@ class ImageSpecialPersonListener implements ActionListener {
         }
     }
 
+<<<<<<< HEAD
     class ClearSpecialPersonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             managerView.clearSpecialPersonInfo();
@@ -129,12 +183,24 @@ class ImageSpecialPersonListener implements ActionListener {
     }
 
     class SortSpecialPersonNameListener implements ActionListener {
+=======
+    // ActionListener to handle Search SpecialPerson
+    class SearchSpecialPersonListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            managerView.searchNameSpecialPersonInfo();
+        }
+    }
+
+    // ActionListener to handle Sort by Name
+    class SortByNameListener implements ActionListener {
+>>>>>>> b156958 (View fix)
         public void actionPerformed(ActionEvent e) {
             specialPersonManager.sortSpecialPersonByName();
             managerView.showListSpecialPersons(specialPersonManager.getListSpecialPersons());
         }
     }
 
+<<<<<<< HEAD
     class SortSpecialPersonYearListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             specialPersonManager.sortSpecialPersonByBirthDay();
@@ -150,23 +216,32 @@ class ImageSpecialPersonListener implements ActionListener {
     }
 
     class SortSpecialPersonOpeningDateListener implements ActionListener {
+=======
+    // ActionListener to handle Sort by Opening Date
+    class SortByOpeningDateListener implements ActionListener {
+>>>>>>> b156958 (View fix)
         public void actionPerformed(ActionEvent e) {
             specialPersonManager.sortSpecialPersonByOpeningDate();
             managerView.showListSpecialPersons(specialPersonManager.getListSpecialPersons());
         }
     }
 
+<<<<<<< HEAD
     class SearchSpecialPersonViewListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             managerView.searchNameSpecialPersonInfo();
         }
     }
 
+=======
+    // ActionListener to handle Statistics
+>>>>>>> b156958 (View fix)
     class StatisticViewListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             managerView.displayStatisticView();
         }
     }
+<<<<<<< HEAD
 
     class SearchSpecialPersonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
@@ -261,3 +336,6 @@ class ImageSpecialPersonListener implements ActionListener {
 //        }
 //    }
 }
+=======
+}
+>>>>>>> b156958 (View fix)

@@ -4,7 +4,10 @@ com\mycompany\quanlydiemthidaihoc\view\LoginView$2.class
 com\mycompany\quanlydiemthidaihoc\controller\StudentController$ListStudentsSelectionListener.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$RoundedBorder.class
 com\raven\chart\Chart$2.class
+<<<<<<< HEAD
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$ClearSpecialPersonListener.class
+=======
+>>>>>>> b156958 (View fix)
 com\mycompany\quanlydiemthidaihoc\controller\StudentController.class
 com\raven\chart\blankchart\BlankPlotChatRender.class
 com\mycompany\quanlydiemthidaihoc\utils\FileUtils.class
@@ -20,7 +23,10 @@ com\mycompany\quanlydiemthidaihoc\view\StudentView$12.class
 com\mycompany\quanlydiemthidaihoc\view\MainView$1.class
 com\raven\chart\LegendItem.class
 com\mycompany\quanlydiemthidaihoc\action\ManagerStudent.class
+<<<<<<< HEAD
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$ListSpecialPersonSelectionListener.class
+=======
+>>>>>>> b156958 (View fix)
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$16.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$3.class
 com\mycompany\quanlydiemthidaihoc\controller\StudentController$UndoListener.class
@@ -32,8 +38,11 @@ com\mycompany\quanlydiemthidaihoc\view\StudentView$17.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$MyRenderer2.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$10.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$9.class
+<<<<<<< HEAD
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$SortSpecialPersonOpeningDateListener.class
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$UndoListener.class
+=======
+>>>>>>> b156958 (View fix)
 com\mycompany\quanlydiemthidaihoc\action\SpecialPersonManager.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$14.class
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$StatisticViewListener.class
@@ -50,6 +59,10 @@ com\mycompany\quanlydiemthidaihoc\view\ManagerView$2.class
 com\mycompany\quanlydiemthidaihoc\entity\SpecialPerson.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$25.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$7.class
+<<<<<<< HEAD
+=======
+com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$SortByOpeningDateListener.class
+>>>>>>> b156958 (View fix)
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$MyRenderer.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$2.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$9.class
@@ -59,10 +72,15 @@ com\mycompany\quanlydiemthidaihoc\view\ManagerView.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$13.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$24.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$19.class
+<<<<<<< HEAD
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$CancelSearchSpecialPersonListener.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$12.class
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$AddSpecialPersonListener.class
 com\mycompany\quanlydiemthidaihoc\action\ManagerStudent$3.class
+=======
+com\mycompany\quanlydiemthidaihoc\view\ManagerView$12.class
+com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$AddSpecialPersonListener.class
+>>>>>>> b156958 (View fix)
 com\mycompany\quanlydiemthidaihoc\entity\StudentXML.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$8.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$16.class
@@ -70,6 +88,10 @@ com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$DeleteSpeci
 com\mycompany\quanlydiemthidaihoc\action\CheckLogin.class
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$EditSpecialPersonListener.class
 com\raven\chart\blankchart\SeriesSize.class
+<<<<<<< HEAD
+=======
+com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$SortByNameListener.class
+>>>>>>> b156958 (View fix)
 com\mycompany\quanlydiemthidaihoc\controller\StudentController$SearchStudentListener.class
 com\mycompany\quanlydiemthidaihoc\entity\User.class
 com\mycompany\quanlydiemthidaihoc\controller\StudentController$DeleteStudentListener.class
@@ -87,7 +109,10 @@ com\mycompany\quanlydiemthidaihoc\view\StudentView$7.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$25.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$23.class
 com\mycompany\quanlydiemthidaihoc\controller\MainController.class
+<<<<<<< HEAD
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$ImageSpecialPersonListener.class
+=======
+>>>>>>> b156958 (View fix)
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$14.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$3.class
@@ -96,7 +121,10 @@ com\mycompany\quanlydiemthidaihoc\view\ManagerView$22.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$11.class
 com\mycompany\quanlydiemthidaihoc\view\LoginView$1.class
 com\mycompany\quanlydiemthidaihoc\action\SpecialPersonManager$1.class
+<<<<<<< HEAD
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$SortSpecialPersonNameListener.class
+=======
+>>>>>>> b156958 (View fix)
 com\mycompany\quanlydiemthidaihoc\view\LoginView$4.class
 com\mycompany\quanlydiemthidaihoc\view\MainView$2.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$4.class
@@ -104,6 +132,7 @@ com\mycompany\quanlydiemthidaihoc\entity\Student.class
 com\raven\chart\Chart$1.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$RoundedBorder.class
 com\raven\chart\Chart.class
+<<<<<<< HEAD
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$SearchSpecialPersonViewListener.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$6.class
 com\raven\chart\blankchart\BlankPlotChart.class
@@ -114,6 +143,14 @@ com\mycompany\quanlydiemthidaihoc\view\StudentView$5.class
 com\mycompany\quanlydiemthidaihoc\QuanLyDiemThiDaiHoc\QuanLyDiemThiDaiHoc.class
 com\raven\chart\LabelColor.class
 com\mycompany\quanlydiemthidaihoc\action\ManagerStudent$2.class
+=======
+com\mycompany\quanlydiemthidaihoc\view\ManagerView$6.class
+com\raven\chart\blankchart\BlankPlotChart.class
+com\mycompany\quanlydiemthidaihoc\view\ManagerView$21.class
+com\mycompany\quanlydiemthidaihoc\view\StudentView$5.class
+com\mycompany\quanlydiemthidaihoc\QuanLyDiemThiDaiHoc\QuanLyDiemThiDaiHoc.class
+com\raven\chart\LabelColor.class
+>>>>>>> b156958 (View fix)
 com\mycompany\quanlydiemthidaihoc\view\StudentView$20.class
 com\mycompany\quanlydiemthidaihoc\controller\LoginController.class
 com\mycompany\quanlydiemthidaihoc\view\StudentView$15.class
@@ -124,12 +161,18 @@ com\mycompany\quanlydiemthidaihoc\view\LoginView$3.class
 com\mycompany\quanlydiemthidaihoc\view\MainView.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$5.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$15.class
+<<<<<<< HEAD
 com\mycompany\quanlydiemthidaihoc\controller\SpecialPersonController$CancelDialogSearchSpecialPersonListener.class
+=======
+>>>>>>> b156958 (View fix)
 com\mycompany\quanlydiemthidaihoc\controller\MainController$ChooseSpecialPersonListener.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$20.class
 com\mycompany\quanlydiemthidaihoc\controller\StudentController$EditStudentListener.class
 com\mycompany\quanlydiemthidaihoc\view\LoginView.class
 com\mycompany\quanlydiemthidaihoc\view\ManagerView$MyRenderer2.class
 com\raven\main\Main$3.class
+<<<<<<< HEAD
 com\mycompany\quanlydiemthidaihoc\action\ManagerStudent$1.class
+=======
+>>>>>>> b156958 (View fix)
 com\mycompany\quanlydiemthidaihoc\view\StudentView$21.class

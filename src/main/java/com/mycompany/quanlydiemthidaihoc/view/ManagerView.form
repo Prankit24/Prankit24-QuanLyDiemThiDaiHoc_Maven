@@ -451,8 +451,11 @@
         </Container>
       </SubComponents>
     </Container>
+<<<<<<< HEAD
     <Component class="org.jdesktop.animation.timing.TimingTargetAdapter" name="timingTargetAdapter1">
     </Component>
+=======
+>>>>>>> b156958 (View fix)
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>

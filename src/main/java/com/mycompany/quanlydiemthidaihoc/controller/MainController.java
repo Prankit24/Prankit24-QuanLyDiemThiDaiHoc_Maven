@@ -38,6 +38,7 @@ public class MainController {
 
     // Listener cho nút "Quản lý học sinh"
     class ChooseResidentListener implements ActionListener {
+<<<<<<< HEAD
         public void actionPerformed(ActionEvent e) {
             if (studentView == null) {
                 studentView = new StudentView();
@@ -45,6 +46,17 @@ public class MainController {
             StudentController studentController = new StudentController(studentView, mainView);
             studentController.showStudentView();  // Hiển thị StudentView
             mainView.setVisible(false);  // Ẩn MainView
+=======
+
+        public void actionPerformed(ActionEvent e) {
+            if (studentView == null) {
+                studentView = new StudentView(); // gọi đúng
+            }
+            StudentController studentController = new StudentController(studentView, mainView);
+            studentController.showStudentView();
+            mainView.setVisible(false);
+
+>>>>>>> b156958 (View fix)
         }
     }
 }

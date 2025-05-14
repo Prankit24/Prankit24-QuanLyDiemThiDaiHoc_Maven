@@ -37,6 +37,25 @@ public class SpecialPersonManager
      * 
      * @param specialPersons
      */
+<<<<<<< HEAD
+=======
+public List<SpecialPerson> readListSpecialPersons() {
+    List<SpecialPerson> list = new ArrayList<SpecialPerson>();
+    try {
+        SpecialPersonXML specialPersonXML = (SpecialPersonXML) FileUtils.readXMLFile(SPECIALPERSON_FILE_NAME, SpecialPersonXML.class);
+        if (specialPersonXML != null) {
+            list = specialPersonXML.getSpecialPerson();
+            System.out.println("Dữ liệu đã được đọc thành công!");
+        } else {
+            System.out.println("Không tìm thấy dữ liệu trong tệp XML.");
+        }
+    } catch (Exception e) {
+        System.err.println("Lỗi khi đọc file XML: " + e.getMessage());
+        e.printStackTrace();
+    }
+    return list;
+}
+>>>>>>> b156958 (View fix)
     public void writeListSpecialPersons(List<SpecialPerson> specialPersons) 
     {
         SpecialPersonXML specialPersonXML = new SpecialPersonXML();
@@ -49,6 +68,7 @@ public class SpecialPersonManager
      * 
      * @return list SpecialPerson
      */
+<<<<<<< HEAD
     public List<SpecialPerson> readListSpecialPersons() 
     {
         List<SpecialPerson> list = new ArrayList<SpecialPerson>();
@@ -60,6 +80,9 @@ public class SpecialPersonManager
         }
         return list;
     }
+=======
+   
+>>>>>>> b156958 (View fix)
     
     /* Hiển thị listSpecialPersons theo tên */
     public List<SpecialPerson> searchSpecialPersonName(String search){
